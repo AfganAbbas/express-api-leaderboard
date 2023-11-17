@@ -33,9 +33,9 @@ mongoose
   });
 
 // Define your routes
-// app.get("/", (req, res) => {
-//   res.send("Hello, this is your Express backend!");
-// });
+app.get("/", (req, res) => {
+  res.send("Hello, this is your Express backend!");
+});
 
 app.get("/api/leaderboard", async (req, res, next) => {
   try {
