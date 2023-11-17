@@ -15,7 +15,7 @@ dotenv.config();
 const app = express();
 
 // Middleware
-// app.use(helmet())
+app.use(helmet())
 app.use(morgan('dev'));
 app.use(cors()); // Enable CORS for all routes
 app.use(bodyParser.json()); // Parse incoming JSON requests
